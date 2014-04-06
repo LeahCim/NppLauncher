@@ -10,6 +10,7 @@
     <RootNamespace>NotePadLauncher</RootNamespace>
     <AssemblyName>NotePad++Launcher</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ApplicationIcon>..\..\..\..\Downloads\Icons\Multi-size\Markdown-white.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
@@ -32,4 +33,10 @@
     <ConsolePause>False</ConsolePause>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Launcher.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
 </Project>
