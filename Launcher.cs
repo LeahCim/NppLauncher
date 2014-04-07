@@ -6,8 +6,8 @@ namespace Launcher
 {
     class MyProcess
     {
-        // Uses the ProcessStartInfo class to start new processes, 
-        // both in a minimized mode. 
+        // Uses the ProcessStartInfo class to start a new process, 
+        // in hidden mode. 
         void OpenWithStartInfo()
         {
             ProcessStartInfo startInfo =
@@ -16,6 +16,7 @@ namespace Launcher
 
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
 
+            // Get command line arguments and pass them on.
             string[] arguments = Environment.GetCommandLineArgs();
             arguments.SetValue("",0);
             startInfo.Arguments = String.Join(" ", arguments);
@@ -25,10 +26,7 @@ namespace Launcher
 
         static void Main()
         {
-            // Get the path that stores favorite links.
-
             MyProcess myProcess = new MyProcess();
-
             myProcess.OpenWithStartInfo();
         }
     }
