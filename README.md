@@ -1,7 +1,7 @@
 Notepad++ Launcher for Markdown files
 =====================================
 
-A Notepad++ launcher with a custom icon for Markdown files.
+Finally a way to use a custom icon for Markdown files, while opening them with Notepad++!
 
 Why?
 ----
